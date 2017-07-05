@@ -1,0 +1,16 @@
+{
+  "name": "telegram-bot-lightweight-readytouse",
+  "version": "1.0.0",
+  "description": "Telegram Bot example in Node.js (ES6/Babel) ready-to-use implementation.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Finalgalaxy",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "telegram-api": "^0.7.9"
+  }
+}
