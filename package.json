@@ -1,7 +1,7 @@
 {
   "name": "telegram-bot-lightweight-readytouse",
   "version": "1.0.0",
-  "description": "Telegram Bot example in Node.js (ES6/Babel) ready-to-use implementation.",
+  "description": "Telegram Bot example in Node.js (ES6/Babel), configured and ready to use.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
