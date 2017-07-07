@@ -64,7 +64,8 @@ typings/
 
 config.js
 
-# Babel es2015 presets file
+# Babel files
 .babelrc
+babel-dist
 
 # END: Project files
