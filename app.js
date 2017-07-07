@@ -48,10 +48,10 @@ bot.command('temperature <param>', function(message){
     message_params_text = 'Error: the temperature you\'ve inserted is not a valid number.';
   }
 
-  let test = new Message()
+  let message_temperature = new Message()
     .text(message_params_text)
     .to(message.chat.id);
-  bot.send(test);
+  bot.send(message_temperature);
 });
 
 // Log in web-server console that Telegram Bot is started.
