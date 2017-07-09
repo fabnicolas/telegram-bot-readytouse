@@ -1,6 +1,6 @@
 # Telegram Bot in Node.JS
 
-### What are you talking about?
+## What are you talking about?
 This repository lets you run and configure a Telegram bot, easily, in order to interact with user input and manage data.
 
 Everything is ready for production environment! Just follow those README steps in order to create and configure your bot. Enjoy!
@@ -9,16 +9,16 @@ This repository uses NPM package 'telegram-api', provided by https://github.com/
 
 By forking this repository, you have a working base which you can start develop your bot features without have troubles regarding Babel configuration for production environment in order to use ES6.
 
-### How to create the bot
+## How to create the bot
 
-## Step 1: create a 'user bot' and connect it with Node.js
+### Step 1: create a 'user bot' and connect it with Node.js
 - Open Telegram application on your computer;
 - Contact BotFather through Telegram here: https://telegram.me/BotFather. This bot will be used to create your bot;
 - As image suggests, follow those steps:
-[http://i.imgur.com/Dcecodn.png]
+![image](http://i.imgur.com/Dcecodn.png)
 - BotFather will provide you an API key. This API key is used to make requests to Telegram API in order to listen messages from your bot user, make bot answer accordingly and much more. Save it for next step.
 
-## Step 2: configure your Node.js application
+### Step 2: configure your Node.js application
 - Create config.js in the repository root with this content. Replace API_TOKEN with the API key you got from BotFather:
 ```
 module.exports = {token_str:'API_TOKEN'};
@@ -34,7 +34,7 @@ All dependencies will be installed accordingly: telegram-api to communicate with
 
 Done! Your bot is now configured.
 
-### Run the bot
+## Run the bot
 - Start your application:
 ```
 npm start
@@ -45,7 +45,7 @@ If it prints:
 ```
 ...congratulations! Now bot will do what you want.
 
-[http://i.imgur.com/v6fmG6f.png]
+![image](http://i.imgur.com/v6fmG6f.png)
 
 ## ES6-ready with Babel in production environment
 The easiest way to start your Node.js app for ES6 support, as I wrote above, is:
@@ -73,7 +73,7 @@ You just build one time the app each time you make changes. To run it, use alway
 
 OPTIONAL: If you're lazy and you want to avoid the risk of running babel-node, change start routine with `"start": "node babel-dist/index.js"` and run it with `npm start` instead.
 
-## More details about Babel and ES6 presets
+### More details about Babel and ES6 presets
 I'm using es2015 presets. You can change them inside .babelrc in case you need to use other presets or add more.
 
 ```
@@ -83,7 +83,7 @@ I'm using es2015 presets. You can change them inside .babelrc in case you need t
 ```
 
 ## Secure your API key
-In .gitignore
+In .gitignore:
 ```
 config.js
 ```
