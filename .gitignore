@@ -59,13 +59,3 @@ typings/
 
 
 
-
-# START: Project files
-
-config.js
-
-# Babel files
-.babelrc
-babel-dist
-
-# END: Project files
