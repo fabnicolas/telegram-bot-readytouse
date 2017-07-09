@@ -15,7 +15,7 @@ By forking this repository, you have a working base which you can start develop 
 - Open Telegram application on your computer;
 - Contact BotFather through Telegram here: https://telegram.me/BotFather. This bot will be used to create your bot;
 - As image suggests, follow those steps:
-![image](http://i.imgur.com/Dcecodn.png)
+[TO_REPLACE]
 - BotFather will provide you an API key. This API key is used to make requests to Telegram API in order to listen messages from your bot user, make bot answer accordingly and much more. Save it for next step.
 
 ### Step 2: configure your Node.js application
