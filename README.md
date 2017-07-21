@@ -20,7 +20,7 @@ By forking this repository, you have a working base which you can start develop 
 
 ### Step 2: configure your Node.js application
 - Create config.js in the repository root with this content. Replace API_TOKEN with the API key you got from BotFather:
-```
+```javascript
 module.exports = {token_str:'API_TOKEN'};
 ```
 This file will be automatically ignored from .gitignore to secure your API key in GitHub.
@@ -76,7 +76,7 @@ OPTIONAL: If you're lazy and you want to avoid the risk of running babel-node, c
 ### More details about Babel and ES6 presets
 I'm using es2015 presets. You can change them inside .babelrc in case you need to use other presets or add more.
 
-```
+```javascript
 {
   "presets": ["es2015"]
 }
@@ -101,7 +101,7 @@ I have personally commented my own code in order to make things as much clear as
 The file src/index.js is a loader for src/app.js file. To change your bot behavior, change src/app.js accordingly.
 
 For example, listening a command:
-```
+```javascript
 // Cache the message to save resources.
 var message_bot_answer = new Message().text('Ping...? Pong!');
 
@@ -113,7 +113,7 @@ bot.command('ping', function(message){
 ```
 
 Listening user words inside a sentence:
-```
+```javascript
 // Listens for a regexp (In this case, a phrase containing Hello, Ciao or Hi in any position).
 // Notice: case insensitive with final 'i' in regexp. If you don't add it, it listens words only if first char is capital letter.
 bot.get(/Hello|Ciao|Hi/i, function(message) {
@@ -125,7 +125,7 @@ bot.get(/Hello|Ciao|Hi/i, function(message) {
 ```
 
 Listens a command with parameters:
-```
+```javascript
 // Listens for command 'praise', with required parameter <people>, with optional parameter [details].
 // Notice: since details parameter is optional, it can be null. You might want to check if it's null.
 bot.command('praise <people> [details]', function(message) {
